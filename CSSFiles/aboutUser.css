@@ -1,0 +1,108 @@
+#section1
+{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#section2
+{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#section3
+{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#section4
+{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+#uploaderImage
+{
+  display: inline-block;
+}
+
+#uploaderName
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 100px;
+  margin-left: 30px;
+  font-size: 70px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+#rgrSinceTitle
+{
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+#rgrSince
+{
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#userLevelTitle
+{
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+#userLevel
+{
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#aboutAreaTitle
+{
+  display: block;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+#aboutArea
+{
+  display: block;
+  font-size: 20px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  background-color: black;
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}

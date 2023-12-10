@@ -1,0 +1,630 @@
+.center
+{
+  font-family: 'Righteous', sans-serif;
+}
+
+h1
+{
+  color: #17d53a;
+}
+
+.topContainer
+{
+  text-align: center;
+}
+
+#videoArea
+{
+  display: block;
+}
+
+#userRequests
+{
+  display: block;
+}
+
+#previousVids
+{
+  display: block;
+}
+
+.flagThumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  transition-timing-function: ease;
+  width: 210px;
+  height: 220px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.flagThumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.flagThumbnail .videoImage
+{
+  width: 200px;
+  height: 150px;
+  margin: 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flagThumbnail .flagBox
+{
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .thumbFlagTitle
+{
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .thumbFlagUser
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  text-decoration: underline;
+}
+
+.flagThumbnail .thumbFlagReason
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.flagThumbnail .thumbList
+{
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .list
+{
+  display: block;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.flagThumbnail .historyTitle
+{
+  display: block;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .newTitle
+{
+  display: block;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .thumbComment
+{
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flagThumbnail .thumbReason
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  max-width: 500px;
+  vertical-align: top;
+}
+
+.flagThumbnail .thumbUser
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  min-width: 150px;
+  vertical-align: top;
+}
+
+.flagThumbnail .buttonContainer
+{
+  display: block;
+  text-align: center;
+}
+
+.flagThumbnail .ignoreSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flagThumbnail .banSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.userThumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  transition-timing-function: ease;
+  width: 210px;
+  height: 230px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.userThumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.userThumbnail .userImage
+{
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  display: block;
+  margin: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.userThumbnail .userDetails
+{
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.userThumbnail .details
+{
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.userThumbnail .buttonContainer
+{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.userThumbnail .enableSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.userThumbnail .ignoreSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.historyThumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  transition-timing-function: ease;
+  width: 210px;
+  height: 220px;
+  margin: 10px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.historyThumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.historyThumbnail .histVideoImage
+{
+  width: 200px;
+  height: 150px;
+  margin: 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.historyThumbnail .histFlagBox
+{
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.historyThumbnail .histFlagTitle
+{
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.historyThumbnail .histFlagUser
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  text-decoration: underline;
+}
+
+.historyThumbnail .histFlagReason
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.historyThumbnail .histList
+{
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.historyThumbnail .list
+{
+  display: block;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.historyThumbnail .histComment
+{
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.historyThumbnail .histReason
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  max-width: 500px;
+  vertical-align: top;
+}
+
+.historyThumbnail .histUser
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  min-width: 150px;
+  vertical-align: top;
+}
+
+.historyThumbnail .buttonContainer
+{
+  display: block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.historyThumbnail .banSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.historyThumbnail .undoBanSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.banThumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  transition-timing-function: ease;
+  width: 210px;
+  height: 220px;
+  margin: 10px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.banThumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.banThumbnail .videoImage
+{
+  width: 200px;
+  height: 150px;
+  margin: 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.banThumbnail .banFlagBox
+{
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.banThumbnail .banFlagTitle
+{
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.banThumbnail .banFlagUser
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  text-decoration: underline;
+}
+
+.banThumbnail .banFlagReason
+{
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.banThumbnail .banList
+{
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.banThumbnail .list
+{
+  display: block;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.banThumbnail .banComment
+{
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+.banThumbnail .banReason
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  max-width: 500px;
+  vertical-align: top;
+}
+
+.banThumbnail .banUser
+{
+  display: inline-block;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+  min-width: 150px;
+  vertical-align: top;
+}
+
+.banThumbnail .buttonContainer
+{
+  display: block;
+  text-align: center;
+}
+
+.banThumbnail .undoBanSubmit
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.viewButton
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+input[type="button"]
+{
+  cursor: pointer;
+}

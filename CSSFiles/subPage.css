@@ -1,0 +1,124 @@
+.UserHeader
+{
+  margin-top:70px;
+  width: 87%;
+  margin: auto;
+  position: relative;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  min-width: 1100px;
+}
+
+.UserHeader .Himages
+{
+  position: relative;
+  height: 350px;
+}
+
+.UserHeader #Banner
+{
+  width: 100%;
+  height: 350px;
+  background: #17d53a;
+  position: absolute;
+}
+
+.UserHeader #UserImage
+{
+  position: relative;
+  margin-top: 130px;
+}
+
+.UserHeader .nav
+{
+  display: block;
+  border: 2px solid #ccc;
+  width: 100%;
+  background-color: black;
+  font-size: 40px;
+}
+
+.nav a
+{
+  color: #17d53a;
+  transition: 0.3s;
+}
+
+.nav a:hover
+{
+  color: white;
+}
+
+.nav #links
+{
+  display: inline-block;
+  text-align: right;
+  float: right;
+  clear: both;
+  padding: 5px;
+}
+
+.nav #HUsername
+{
+  margin: 5px;
+  display: inline-block;
+  clear: both;
+}
+
+.UserHeader #subButtonArea
+{
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 8px;
+  vertical-align: top;
+  position: relative;
+}
+
+.UserHeader #banButtonArea
+{
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 8px;
+  vertical-align: top;
+  position: relative;
+}
+
+.UserHeader input[type="button"]
+{
+  width: 130px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  float: right;
+  cursor: pointer;
+}
+
+
+.nav #HSubscribe
+{
+  display: inline-block;
+  clear: both;
+}
+
+.nav #RecentVideos
+{
+}
+
+.nav #Playlists
+{
+}
+
+.nav #About
+{
+}
+
+.vidThumbnails
+{
+  position: relative;
+  margin-top: 50px;
+  width: 87%;
+  display: block;
+  margin: auto;
+}

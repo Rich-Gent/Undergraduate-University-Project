@@ -1,0 +1,47 @@
+#clearBtn
+{
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+}
+
+h2
+{
+  font-size: 50px;
+}
+
+#thumbMessage
+{
+  font-size: 20px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+.delete
+{
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  display: none;
+}
+
+.delete:hover
+{
+  color: white;
+}
+
+.thumbnail:hover .delete
+{
+  transition: 0.3s;
+  display: block;
+}

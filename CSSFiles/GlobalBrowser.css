@@ -1,0 +1,484 @@
+#header
+{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #464646;
+}
+
+#header h1
+{
+  color: #17d53a;
+  font-size: 60px;
+  font-family: 'Righteous', sans-serif;
+  margin: 0;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.center
+{
+  background-color: #636363;
+  display: block;
+  padding-top: 80px;
+}
+
+body
+{
+  background-color: #636363;
+  margin: 0;
+}
+
+/* The side navigation menu */
+.SideNav
+{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 998; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #464646; /* Black*/
+  overflow-x: auto; /* Disable horizontal scroll */
+  overflow-y: auto;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  margin-top:  74px;
+}
+
+/* Position and style the close button (top right corner) */
+.SideNav .closebtn
+{
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  margin-left: 60px;
+}
+
+.SideNav .closebtn .bar
+{
+    width: 35px;
+    height: 5px;
+    background-color: #17d53a;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.SideNav .closebtn:hover .bar
+{
+    background-color: white;
+}
+
+/*Position and style of the open button in the top left corner */
+.center .openbtn
+{
+    position: fixed;
+    top: 85px;
+    left: 20px;
+    z-index: 997;
+}
+
+.center .openbtn .bar
+{
+    width: 35px;
+    height: 5px;
+    background-color: #17d53a;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.center .openbtn:hover .bar
+{
+    background-color: white;
+}
+
+
+.SideNav .search_bar input[type="text"]
+{
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  left:5%;
+  width: 85%;
+  border-radius: 5px;
+  background-color: white;
+  background-image: url('../../Images/Misc/SearchIcon.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 10px 40px 10px 10px;
+}
+
+/*User image*/
+.SideNav #UserImage
+{
+  margin: 5%;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#container
+{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* The navigation menu links */
+.SideNav a
+{
+    font-family: 'Righteous', sans-serif;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #17d53a;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.SideNav a:hover, .offcanvas a:focus
+{
+    color: #f1f1f1;
+}
+
+/* Login hyperlink */
+.SideNav #LoginLink
+{
+  position: relative;
+  transition: 1s;
+}
+
+/* Register hyperlink */
+.SideNav #RegisterLink
+{
+  position: relative;
+  left: 30%;
+}
+
+.SideNav #AboutLink
+{
+  position: relative;
+}
+
+.SideNav #FeedbackLink
+{
+  position: relative;
+  left: 25%;
+}
+
+/*Username text display once a user has signed in*/
+.SideNav #UserText
+{
+  display: block;
+  visibility: hidden;
+  position: relative;
+  font-family: 'Righteous', sans-serif;
+  font-size: 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.SideNav #forgotLink
+{
+  margin-left: 5%;
+}
+
+
+/*Login form area*/
+.SideNav .LoginForm
+{
+  visibility: hidden;
+  overflow: hidden;
+  margin: 3%;
+  height: 0px;
+  position: relative;
+  width: 85%;
+  padding: 5px;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+/*The login text boxes*/
+.SideNav .LoginForm input[type="text"]
+{
+  visibility: inherit;
+  margin: 3%;
+  border: 2px solid #ccc;
+  width: 85%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  color: #17d53a;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+}
+
+.SideNav .LoginForm input[type="password"]
+{
+  visibility: inherit;
+  margin: 3%;
+  border: 2px solid #ccc;
+  width: 85%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  color: #17d53a;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+}
+
+/*The login submit button*/
+.SideNav .LoginForm input[type="submit"]
+{
+  visibility: inherit;
+  margin: 3%;
+  width: 97%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color:black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+.SideNav #topBar
+{
+  display: block;
+}
+
+.SideNav #logoutLink
+{
+  display: inline-block;
+  padding: 5px;
+  text-align: left;
+
+}
+
+.SideNav #adminLink
+{
+  padding: 5px;
+  display: inline-block;
+  text-align: right;
+  margin-left: 45px;
+}
+
+.SideNav #logMessage
+{
+  text-align: center;
+  color: red;
+  font-family: sans-serif;
+}
+
+.SideNav #subArea
+{
+  display: block;
+  min-height: 10%;
+  max-height: 30%;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.SideNav #subTitle
+{
+  display: block;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+}
+
+.SideNav .sub
+{
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: 30px;
+  font-size: 20px;
+  width:80%;
+  background-color: black;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.SideNav .sub:hover
+{
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.SideNav #subMessage
+{
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+.alert
+{
+    padding: 20px;
+    background-color: #17d53a;
+    color: white;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index: 999;
+}
+
+.closeAlert
+{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    float: right;
+    padding-right: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closeAlert:hover
+{
+    color: black;
+}
+
+h2
+{
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+}
+
+#searchField
+{
+  position: fixed;
+  display: none;
+  width: 0%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.searchMessage
+{
+  display: block;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  font-size: 20px;
+}
+
+#videoSearch
+{
+  display: block;
+}
+
+#userSearch
+{
+  display: block;
+}
+
+.thumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 210px;
+  height: 200px;
+  margin: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  background-color: #636363;
+  position: relative;
+}
+
+.thumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.thumbnail .videoInfo
+{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.thumbnail .videoImage
+{
+  width: 200px;
+  height: 150px;
+  margin: 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.userThumbnail
+{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 210px;
+  height: 250px;
+  margin: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  background-color: #636363;
+  position: relative;
+}
+
+.userThumbnail:hover
+{
+  box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.userThumbnail .userImage
+{
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  display: block;
+  margin: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.userThumbnail .userInfo
+{
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: black;
+  color: #17d53a;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px)
+{
+
+}
+
+
+@media(max-device-width: 750px)
+{
+
+}

@@ -1,0 +1,28 @@
+#infoContainer
+{
+  margin: auto;
+  min-width: 900px;
+  max-width: 1200px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Righteous', sans-serif;
+  color: #17d53a;
+  background-color: black;
+}
+
+#infoTitle
+{
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
+}
+
+#infoArea
+{
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
